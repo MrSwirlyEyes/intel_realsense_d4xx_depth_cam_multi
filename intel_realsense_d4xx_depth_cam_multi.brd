@@ -165,13 +165,13 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTYwNDI5MzA4MDY3NTY" f3durn="urn:adsk.wipprod:dm.lineage:O28O6C-qS_GBEwGM4ZqODw" pcbguid="62f0b917-b0ba-40be-aa7b-2ff664897ed8" lastpulledtime="" lastsyncedchangeguid="0cc64ee9-2472-b7ca-e1b6-31f0371193c6"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTYwNDI5MzA4MDY3NTY" f3durn="urn:adsk.wipprod:dm.lineage:O28O6C-qS_GBEwGM4ZqODw" pcbguid="62f0b917-b0ba-40be-aa7b-2ff664897ed8" lastpulledtime="" lastsyncedchangeguid="8800b89f-20c9-5480-1314-b8252c44279b"/>
 <plain>
-<wire x1="-18.7" y1="1.5" x2="18.7" y2="1.5" width="0" layer="20"/>
-<wire x1="18.7" y1="1.5" x2="18.7" y2="22.8" width="0" layer="20"/>
+<wire x1="-18.7" y1="-2.1" x2="18.7" y2="-2.1" width="0" layer="20"/>
+<wire x1="18.7" y1="-2.1" x2="18.7" y2="22.8" width="0" layer="20"/>
 <wire x1="18.7" y1="22.8" x2="-18.7" y2="22.8" width="0" layer="20"/>
-<wire x1="-18.7" y1="22.8" x2="-18.7" y2="1.5" width="0" layer="20"/>
-<text x="9" y="10" size="1" layer="21" font="vector" ratio="10" align="top-left">Rev 1</text>
+<wire x1="-18.7" y1="22.8" x2="-18.7" y2="-2.1" width="0" layer="20"/>
+<text x="8" y="17" size="1" layer="21" font="vector" ratio="10" align="top-left">Rev 1</text>
 <text x="-18" y="22" size="0.5" layer="21" font="vector" ratio="10" align="top-left">Designed by:</text>
 <text x="-17" y="21" size="1" layer="21" font="vector" ratio="15" align="top-left">MrSwirlyEyes</text>
 <text x="7.8" y="22.3" size="1" layer="21" font="vector" ratio="15" align="top-left">Intel Realsense
@@ -183,8 +183,8 @@ Depth CAM</text>
 <text x="18" y="22.3" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="top-left">Intel Realsense
 D4XX Multi (3x)
 Depth CAM</text>
-<text x="18.2" y="9.6" size="0.75" layer="21" font="vector" ratio="10" align="top-right">ON</text>
-<text x="18.2" y="18.4" size="0.75" layer="21" font="vector" ratio="10" align="bottom-right">OFF</text>
+<text x="18.2" y="7.6" size="1" layer="21" font="vector" ratio="20" align="top-right">ON</text>
+<text x="18.2" y="16.4" size="1" layer="21" font="vector" ratio="20" align="bottom-right">OFF</text>
 </plain>
 <libraries>
 <library name="PiB_connectors" urn="urn:adsk.eagle:library:6338520">
@@ -802,6 +802,68 @@ Depth CAM</text>
 </package>
 </packages>
 </library>
+<library name="PiB_resistors">
+<packages>
+<package name="RESC1608X65_SMD-0603" urn="urn:adsk.eagle:footprint:2959475/1" locally_modified="yes">
+<description>CHIP, 1.6 X 0.8 X 0.65 mm body
+&lt;p&gt;CHIP package with body size 1.6 X 0.8 X 0.65 mm&lt;/p&gt;</description>
+<wire x1="0.85" y1="0.6786" x2="-0.85" y2="0.6786" width="0.12" layer="21"/>
+<wire x1="0.85" y1="-0.6786" x2="-0.85" y2="-0.6786" width="0.12" layer="21"/>
+<wire x1="0.85" y1="-0.45" x2="-0.85" y2="-0.45" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="-0.45" x2="-0.85" y2="0.45" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="0.45" x2="0.85" y2="0.45" width="0.12" layer="51"/>
+<wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.12" layer="51"/>
+<smd name="1" x="-0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
+<smd name="2" x="0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
+<text x="0" y="1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" width="0.127" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="39"/>
+<wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="39"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="RESC1608X65" urn="urn:adsk.eagle:package:2959474/1" locally_modified="yes" type="model">
+<description>CHIP, 1.6 X 0.8 X 0.65 mm body
+&lt;p&gt;CHIP package with body size 1.6 X 0.8 X 0.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="RESC1608X65_SMD-0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="PiB_capacitors">
+<packages>
+<package name="CAPC1608X95" urn="urn:adsk.eagle:footprint:3041596/1" locally_modified="yes">
+<description>CHIP, 1.6 X 0.8 X 0.95 mm body
+&lt;p&gt;CHIP package with body size 1.6 X 0.8 X 0.95 mm&lt;/p&gt;</description>
+<wire x1="0.875" y1="0.6991" x2="-0.875" y2="0.6991" width="0.12" layer="21"/>
+<wire x1="0.875" y1="-0.6991" x2="-0.875" y2="-0.6991" width="0.12" layer="21"/>
+<wire x1="0.875" y1="-0.475" x2="-0.875" y2="-0.475" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="-0.475" x2="-0.875" y2="0.475" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="0.475" x2="0.875" y2="0.475" width="0.12" layer="51"/>
+<wire x1="0.875" y1="0.475" x2="0.875" y2="-0.475" width="0.12" layer="51"/>
+<smd name="1" x="-0.8123" y="0" dx="0.8456" dy="0.9702" layer="1"/>
+<smd name="2" x="0.8123" y="0" dx="0.8456" dy="0.9702" layer="1"/>
+<text x="0" y="1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" width="0.127" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="39"/>
+<wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="39"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="CAPC1608X95" urn="urn:adsk.eagle:package:3041595/1" locally_modified="yes" type="model">
+<description>CHIP, 1.6 X 0.8 X 0.95 mm body
+&lt;p&gt;CHIP package with body size 1.6 X 0.8 X 0.95 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPC1608X95"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -989,53 +1051,53 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="CAM1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="-12.4" y="4.3" smashed="yes">
-<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="455-1809-1-ND" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_HOUSING" value="Digikey" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="JST Sales America Inc." x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_HOUSING" value="SHR-09V-S" x="6.65" y="-0.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-12.4" y="7.8" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="-12.4" y="3.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
+<element name="CAM1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="-12.4" y="0.7" smashed="yes">
+<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="455-1809-1-ND" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_HOUSING" value="Digikey" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="JST Sales America Inc." x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_HOUSING" value="SHR-09V-S" x="6.65" y="-4.38" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-14.4" y="4.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="-12.4" y="-0.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
 </element>
-<element name="CAM2" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="0" y="4.3" smashed="yes">
-<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="455-1809-1-ND" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_HOUSING" value="Digikey" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="JST Sales America Inc." x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_HOUSING" value="SHR-09V-S" x="19.05" y="-9.67" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0" y="7.8" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="0" y="3.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
+<element name="CAM2" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="0" y="0.7" smashed="yes">
+<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="455-1809-1-ND" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_HOUSING" value="Digikey" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="JST Sales America Inc." x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_HOUSING" value="SHR-09V-S" x="19.05" y="-13.27" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-2" y="4.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="0" y="-0.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
 </element>
-<element name="CAM3" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="12.4" y="4.3" smashed="yes">
-<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="455-1809-1-ND" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_HOUSING" value="Digikey" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="JST Sales America Inc." x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_HOUSING" value="SHR-09V-S" x="31.45" y="-18.56" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12.4" y="7.8" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="12.4" y="3.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
+<element name="CAM3" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" package="SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB" x="12.4" y="0.7" smashed="yes">
+<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_HOUSING" value="http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=455-1809-1-ND" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_HOUSING" value="https://www.digikey.com/products/en?keywords=455-1399-ND" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="455-1809-1-ND" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_HOUSING" value="455-1399-ND" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_HOUSING" value="Digikey" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="JST Sales America Inc." x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_HOUSING" value="JST Sales America Inc." x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SM09B-SRSS-TB(LF)(SN)" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_HOUSING" value="SHR-09V-S" x="31.45" y="-22.16" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.4" y="4.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="12.4" y="-0.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
 </element>
 <element name="BNC1" library="PiB_connectors" package="BNC_RA_1-1337543-0" package3d_urn="urn:adsk.eagle:package:6338576/2" value="BNC 50OHM 4GHz" x="0" y="15.4" smashed="yes">
 <attribute name="DATASHEET" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337543&amp;DocType=Customer+Drawing&amp;DocLang=English" x="0" y="15.4" size="1.778" layer="27" display="off"/>
@@ -1045,30 +1107,90 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="TE Connectivity AMP Connectors" x="0" y="15.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1-1337543-0" x="0" y="15.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SW1" library="PiB_switches" package="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" package3d_urn="urn:adsk.eagle:package:2959400/3" value="300mA/4V" x="17" y="14" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/APEM%20Components%20PDFs/MA_Series_.pdf" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=679-1847-1-ND" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="679-1847-1-ND" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="APEM Inc." x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="MA12RTR" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="14.206" y="14" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="top-center"/>
-<attribute name="TESTED" value="YES" x="17" y="14" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="18.143" y="14" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
+<element name="SW1" library="PiB_switches" package="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" package3d_urn="urn:adsk.eagle:package:2959400/3" value="300mA/4V" x="17" y="12" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/APEM%20Components%20PDFs/MA_Series_.pdf" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=679-1847-1-ND" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="679-1847-1-ND" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="APEM Inc." x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MA12RTR" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="14.206" y="12" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="top-center"/>
+<attribute name="TESTED" value="YES" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="18.143" y="12" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="S1" library="PiB_switches" package="BTN_MOMENTARY_SPDT-NO_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V" x="12" y="14" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="https://www.ckswitches.com/media/1479/kmr2.pdf" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=401-1426-1-ND" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="401-1426-1-ND" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="C&amp;K" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="KMR211GLFS" x="12" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="9.8" y="14" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="13.7" y="14" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
+<element name="S1" library="PiB_switches" package="BTN_MOMENTARY_SPDT-NO_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V" x="12" y="12" smashed="yes" rot="R90">
+<attribute name="DATASHEET" value="https://www.ckswitches.com/media/1479/kmr2.pdf" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=401-1426-1-ND" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="401-1426-1-ND" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="C&amp;K" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="KMR211GLFS" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="9.8" y="12" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.7" y="12" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="U$4" library="PiB_logo" package="MRSWIRLYEYES-LOGO" value="" x="-13" y="14" smashed="yes" rot="MR0"/>
 <element name="U$5" library="PiB_logo" package="MRSWIRLYEYES-LOGO" value="" x="-13" y="14" smashed="yes"/>
+<element name="R1" library="PiB_resistors" package="RESC1608X65_SMD-0603" package3d_urn="urn:adsk.eagle:package:2959474/1" value="20K" x="-11.6" y="6.9" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ203V+7+WW" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P20KGCT-ND" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="P20KGCT-ND" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ERJ-3GEYJ203V" x="-11.6" y="6.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-11.6" y="5.9" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="-11.6" y="7.9" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C1" library="PiB_capacitors" package="CAPC1608X95" package3d_urn="urn:adsk.eagle:package:3041595/1" value="20nF/50V" x="-11.6" y="5.1" smashed="yes">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_hightemp_en.pdf" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-2505-1-ND" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="445-2505-1-ND" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C1608X8R1H223K080AA" x="-11.6" y="5.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-11.6" y="6.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="-11.6" y="4.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+</element>
+<element name="R2" library="PiB_resistors" package="RESC1608X65_SMD-0603" package3d_urn="urn:adsk.eagle:package:2959474/1" value="20K" x="0.8" y="6.9" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ203V+7+WW" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P20KGCT-ND" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="P20KGCT-ND" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ERJ-3GEYJ203V" x="4.8" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="0.8" y="5.9" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="0.8" y="7.9" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C2" library="PiB_capacitors" package="CAPC1608X95" package3d_urn="urn:adsk.eagle:package:3041595/1" value="20nF/50V" x="0.8" y="5.1" smashed="yes">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_hightemp_en.pdf" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-2505-1-ND" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="445-2505-1-ND" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C1608X8R1H223K080AA" x="-7.2" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.8" y="6.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="0.8" y="4.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+</element>
+<element name="R3" library="PiB_resistors" package="RESC1608X65_SMD-0603" package3d_urn="urn:adsk.eagle:package:2959474/1" value="20K" x="13.2" y="6.9" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ203V+7+WW" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P20KGCT-ND" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="P20KGCT-ND" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ERJ-3GEYJ203V" x="17.2" y="-1.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="13.2" y="5.9" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="13.2" y="7.9" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C3" library="PiB_capacitors" package="CAPC1608X95" package3d_urn="urn:adsk.eagle:package:3041595/1" value="20nF/50V" x="13.2" y="5.1" smashed="yes">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_hightemp_en.pdf" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-2505-1-ND" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="445-2505-1-ND" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C1608X8R1H223K080AA" x="5.2" y="10.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="13.2" y="6.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="13.2" y="4.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1078,60 +1200,95 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="BNC1" pad="-"/>
 <polygon width="0.1524" layer="16">
 <vertex x="-18.7" y="22.8"/>
-<vertex x="-18.7" y="1.5"/>
-<vertex x="18.7" y="1.5"/>
+<vertex x="-18.7" y="-2.1"/>
+<vertex x="18.7" y="-2.1"/>
 <vertex x="18.7" y="22.8"/>
 </polygon>
 <polygon width="0.1524" layer="1">
 <vertex x="-18.7" y="22.8"/>
-<vertex x="-18.7" y="1.5"/>
-<vertex x="18.7" y="1.5"/>
+<vertex x="-18.7" y="-2.1"/>
+<vertex x="18.7" y="-2.1"/>
 <vertex x="18.7" y="22.8"/>
 </polygon>
-<via x="-8.4" y="8.1" extent="1-16" drill="0.254"/>
-<via x="4" y="8.1" extent="1-16" drill="0.254"/>
-<via x="16.4" y="8.1" extent="1-16" drill="0.254"/>
+<via x="-8.4" y="4.5" extent="1-16" drill="0.254"/>
+<via x="4" y="4.5" extent="1-16" drill="0.254"/>
+<via x="16.4" y="4.5" extent="1-16" drill="0.254"/>
+<contactref element="R1" pad="1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="R2" pad="1"/>
+<contactref element="C2" pad="2"/>
+<contactref element="R3" pad="1"/>
+<contactref element="C3" pad="2"/>
+<via x="-9.7" y="5.1" extent="1-16" drill="0.254"/>
+<via x="-9.7" y="6.9" extent="1-16" drill="0.254"/>
+<via x="2.7" y="6.9" extent="1-16" drill="0.254"/>
+<via x="2.7" y="5.1" extent="1-16" drill="0.254"/>
+<via x="15.1" y="6.9" extent="1-16" drill="0.254"/>
+<via x="15.1" y="5.1" extent="1-16" drill="0.254"/>
+<wire x1="14.0123" y1="5.1" x2="15.1" y2="5.1" width="0.381" layer="1"/>
+<wire x1="14.0204" y1="6.9" x2="15.1" y2="6.9" width="0.381" layer="1"/>
+<wire x1="1.6123" y1="5.1" x2="2.7" y2="5.1" width="0.381" layer="1"/>
+<wire x1="1.6204" y1="6.9" x2="2.7" y2="6.9" width="0.381" layer="1"/>
+<wire x1="-10.7877" y1="5.1" x2="-9.7" y2="5.1" width="0.381" layer="1"/>
+<wire x1="-10.7796" y1="6.9" x2="-9.7" y2="6.9" width="0.381" layer="1"/>
+<wire x1="-8.4" y1="3.15" x2="-8.4" y2="4.5" width="0.381" layer="1"/>
+<wire x1="4" y1="3.15" x2="4" y2="4.5" width="0.381" layer="1"/>
+<wire x1="16.4" y1="3.15" x2="16.4" y2="4.5" width="0.381" layer="1"/>
 </signal>
 <signal name="SYNC">
 <contactref element="CAM3" pad="5"/>
 <contactref element="CAM2" pad="5"/>
 <contactref element="CAM1" pad="5"/>
-<wire x1="-12.4" y1="6.75" x2="-12.4" y2="5.7" width="0.381" layer="1"/>
-<wire x1="-12.4" y1="5.7" x2="-11.7" y2="5" width="0.381" layer="1"/>
-<wire x1="-11.7" y1="5" x2="-0.7" y2="5" width="0.381" layer="1"/>
-<wire x1="-0.7" y1="5" x2="11.7" y2="5" width="0.381" layer="1"/>
-<wire x1="11.7" y1="5" x2="17" y2="5" width="0.381" layer="1"/>
-<wire x1="18" y1="6" x2="17" y2="5" width="0.381" layer="1"/>
-<wire x1="12.4" y1="6.75" x2="12.4" y2="5.7" width="0.381" layer="1"/>
-<wire x1="12.4" y1="5.7" x2="11.7" y2="5" width="0.381" layer="1"/>
-<wire x1="0" y1="6.75" x2="0" y2="5.7" width="0.381" layer="1"/>
-<wire x1="0" y1="5.7" x2="-0.7" y2="5" width="0.381" layer="1"/>
 <contactref element="SW1" pad="1"/>
-<wire x1="15.25" y1="11.75" x2="14.25" y2="11.75" width="0.381" layer="1"/>
-<wire x1="14.25" y1="11.75" x2="14" y2="11.5" width="0.381" layer="1"/>
-<wire x1="14" y1="11.5" x2="14" y2="9.6" width="0.381" layer="1"/>
+<wire x1="15.25" y1="9.75" x2="14.25" y2="9.75" width="0.381" layer="1"/>
+<wire x1="14.25" y1="9.75" x2="14" y2="9.5" width="0.381" layer="1"/>
+<wire x1="14" y1="9.1" x2="14" y2="9.5" width="0.381" layer="1"/>
 <contactref element="S1" pad="3"/>
-<wire x1="14" y1="9.6" x2="14.7" y2="8.9" width="0.381" layer="1"/>
-<wire x1="14.7" y1="8.9" x2="16.8" y2="8.9" width="0.381" layer="1"/>
-<wire x1="16.8" y1="8.9" x2="18" y2="7.7" width="0.381" layer="1"/>
-<wire x1="18" y1="7.7" x2="18" y2="6" width="0.381" layer="1"/>
-<wire x1="12.8" y1="12" x2="13.5" y2="12" width="0.381" layer="1"/>
-<wire x1="13.5" y1="12" x2="14" y2="11.5" width="0.381" layer="1"/>
+<wire x1="12.8" y1="10" x2="13.5" y2="10" width="0.381" layer="1"/>
+<wire x1="13.5" y1="10" x2="14" y2="9.5" width="0.381" layer="1"/>
+<contactref element="R1" pad="2"/>
+<contactref element="C1" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="R2" pad="2"/>
+<contactref element="R3" pad="2"/>
+<contactref element="C3" pad="1"/>
+<wire x1="-12.4" y1="3.15" x2="-12.4" y2="5.0877" width="0.381" layer="1"/>
+<wire x1="-12.4" y1="5.0877" x2="-12.4123" y2="5.1" width="0.381" layer="1"/>
+<wire x1="-12.4123" y1="5.1" x2="-12.4123" y2="6.8919" width="0.381" layer="1"/>
+<wire x1="-12.4123" y1="6.8919" x2="-12.4204" y2="6.9" width="0.381" layer="1"/>
+<wire x1="12.4" y1="3.15" x2="12.3877" y2="3.1623" width="0.381" layer="1"/>
+<wire x1="12.3877" y1="3.1623" x2="12.3877" y2="5.1" width="0.381" layer="1"/>
+<wire x1="12.3877" y1="5.1" x2="12.3796" y2="5.1081" width="0.381" layer="1"/>
+<wire x1="12.3796" y1="5.1081" x2="12.3796" y2="6.9" width="0.381" layer="1"/>
+<wire x1="0" y1="3.15" x2="-0.0123" y2="3.1623" width="0.381" layer="1"/>
+<wire x1="-0.0123" y1="3.1623" x2="-0.0123" y2="5.1" width="0.381" layer="1"/>
+<wire x1="-0.0123" y1="5.1" x2="-0.0123" y2="6.8919" width="0.381" layer="1"/>
+<wire x1="-0.0123" y1="6.8919" x2="-0.0204" y2="6.9" width="0.381" layer="1"/>
+<wire x1="-12.4204" y1="6.9" x2="-12.4204" y2="7.4796" width="0.381" layer="1"/>
+<wire x1="-12.4204" y1="7.4796" x2="-12.1" y2="7.8" width="0.381" layer="1"/>
+<wire x1="12.3796" y1="6.9" x2="12.3796" y2="7.4796" width="0.381" layer="1"/>
+<wire x1="12.3796" y1="7.4796" x2="12.65" y2="7.75" width="0.381" layer="1"/>
+<wire x1="12.65" y1="7.75" x2="14" y2="9.1" width="0.381" layer="1"/>
+<wire x1="12.6" y1="7.8" x2="12.65" y2="7.75" width="0.381" layer="1"/>
+<wire x1="-12.1" y1="7.8" x2="0.3" y2="7.8" width="0.381" layer="1"/>
+<wire x1="0.3" y1="7.8" x2="12.6" y2="7.8" width="0.381" layer="1"/>
+<wire x1="-0.0204" y1="6.9" x2="-0.0204" y2="7.4796" width="0.381" layer="1"/>
+<wire x1="-0.0204" y1="7.4796" x2="0.3" y2="7.8" width="0.381" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="BNC1" pad="+"/>
 <contactref element="SW1" pad="2"/>
 <contactref element="S1" pad="2"/>
-<wire x1="15.25" y1="14.75" x2="14.25" y2="14.75" width="0.381" layer="1"/>
-<wire x1="14.25" y1="14.75" x2="14" y2="15" width="0.381" layer="1"/>
-<wire x1="14" y1="16.5" x2="13.6" y2="16.9" width="0.381" layer="1"/>
-<wire x1="11.4" y1="16.9" x2="11.2" y2="16.7" width="0.381" layer="1"/>
-<wire x1="11.2" y1="16.7" x2="11.2" y2="16" width="0.381" layer="1"/>
-<wire x1="14" y1="15" x2="14" y2="16.5" width="0.381" layer="1"/>
-<wire x1="13.6" y1="16.9" x2="11.4" y2="16.9" width="0.381" layer="1"/>
-<wire x1="0" y1="10.32" x2="4.82" y2="10.32" width="0.508" layer="1"/>
-<wire x1="4.82" y1="10.32" x2="10.5" y2="16" width="0.508" layer="1"/>
-<wire x1="10.5" y1="16" x2="11.2" y2="16" width="0.508" layer="1"/>
+<wire x1="15.25" y1="12.75" x2="14.25" y2="12.75" width="0.381" layer="1"/>
+<wire x1="14.25" y1="12.75" x2="14" y2="13" width="0.381" layer="1"/>
+<wire x1="14" y1="14.5" x2="13.6" y2="14.9" width="0.381" layer="1"/>
+<wire x1="11.4" y1="14.9" x2="11.2" y2="14.7" width="0.381" layer="1"/>
+<wire x1="11.2" y1="14.7" x2="11.2" y2="14" width="0.381" layer="1"/>
+<wire x1="14" y1="13" x2="14" y2="14.5" width="0.381" layer="1"/>
+<wire x1="13.6" y1="14.9" x2="11.4" y2="14.9" width="0.381" layer="1"/>
+<wire x1="0" y1="10.32" x2="6.82" y2="10.32" width="0.508" layer="1"/>
+<wire x1="6.82" y1="10.32" x2="10.5" y2="14" width="0.508" layer="1"/>
+<wire x1="10.5" y1="14" x2="11.2" y2="14" width="0.508" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
