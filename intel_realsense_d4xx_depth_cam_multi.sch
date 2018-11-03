@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -372,6 +372,26 @@
 <attribute name="MFR" value="TE Connectivity AMP Connectors" constant="no"/>
 <attribute name="MPN" value="1-1337543-0" constant="no"/>
 <attribute name="VALUE" value="BNC 50OHM 4GHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH_75OHM_2GHZ" package="BNC_RA_1-1337543-0">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6338576/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1478032&amp;DocType=Customer+Drawing&amp;DocLang=English" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=A97560-ND" constant="no"/>
+<attribute name="DISTPN" value="A97560-ND" constant="no"/>
+<attribute name="MFR" value="TE Connectivity AMP Connectors" constant="no"/>
+<attribute name="MPN" value="1-1478032-0" constant="no"/>
+<attribute name="VALUE" value="BNC 75OHM 2GHz" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1109,13 +1129,13 @@
 <part name="CAM1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" deviceset="1X09" device="_SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB"/>
 <part name="CAM2" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" deviceset="1X09" device="_SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB"/>
 <part name="CAM3" library="PiB_connectors" library_urn="urn:adsk.eagle:library:6338520" deviceset="1X09" device="_SM09B-SRSS-TB" package3d_urn="urn:adsk.eagle:package:6338575/1" value="SM09B-SRSS-TB"/>
-<part name="BNC1" library="PiB_connectors" deviceset="BNC_CONNECTOR" device="_PTH_50OHM_4GHZ" package3d_urn="urn:adsk.eagle:package:6338576/2" value="BNC 50OHM 4GHz"/>
+<part name="BNC1" library="PiB_connectors" deviceset="BNC_CONNECTOR" device="_PTH_75OHM_2GHZ" package3d_urn="urn:adsk.eagle:package:6338576/2" value="BNC 75OHM 2GHz"/>
 <part name="SUPPLY1" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="SW1" library="PiB_switches" deviceset="SWITCH_SPDT" device="_RA_SMD_300MA-4V_6.7L-2.6W" package3d_urn="urn:adsk.eagle:package:2959400/3" value="300mA/4V"/>
-<part name="S1" library="PiB_switches" deviceset="SWITCH_MOMENTARY" device="_SPST-NO_SMD_50MA-32V_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V"/>
+<part name="SW2" library="PiB_switches" deviceset="SWITCH_MOMENTARY" device="_SPST-NO_SMD_50MA-32V_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V"/>
 <part name="R1" library="PiB_resistors" deviceset="20KΩ" device="_SMD-0603_1/10W-5%" package3d_urn="urn:adsk.eagle:package:2959474/1" value="20K"/>
 <part name="C1" library="PiB_capacitors" deviceset="22NF" device="_CER_SMD-0603_50V-10%" package3d_urn="urn:adsk.eagle:package:3041595/1" value="20nF/50V"/>
 <part name="SUPPLY5" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -1158,9 +1178,9 @@
 <attribute name="NAME" x="-6.35" y="43.688" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="-6.35" y="37.338" size="0.635" layer="96" font="vector" ratio="10" align="top-center"/>
 </instance>
-<instance part="S1" gate="G$1" x="-7.62" y="48.26" smashed="yes">
-<attribute name="NAME" x="-7.62" y="50.038" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="-7.62" y="47.752" size="0.635" layer="96" font="vector" ratio="10" align="top-center"/>
+<instance part="SW2" gate="G$1" x="-6.35" y="48.26" smashed="yes">
+<attribute name="NAME" x="-6.35" y="50.038" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="-6.35" y="47.752" size="0.635" layer="96" font="vector" ratio="10" align="top-center"/>
 </instance>
 <instance part="R1" gate="G$1" x="38.1" y="31.75" smashed="yes" rot="R90">
 <attribute name="VALUE" x="39.243" y="31.75" size="0.635" layer="96" font="vector" ratio="10" rot="R90" align="top-center"/>
@@ -1295,9 +1315,9 @@
 <pinref part="SW1" gate="G$1" pin="S1"/>
 <wire x1="2.54" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
 <label x="2.54" y="43.18" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="S1" gate="G$1" pin="2"/>
+<pinref part="SW2" gate="G$1" pin="2"/>
 <wire x1="0" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-3.81" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="0" y1="48.26" x2="0" y2="43.18" width="0.1524" layer="91"/>
 <junction x="0" y="43.18"/>
 </segment>
@@ -1308,9 +1328,9 @@
 <pinref part="SW1" gate="G$1" pin="P"/>
 <wire x1="-20.32" y1="38.1" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="SW2" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="48.26" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-8.89" y1="48.26" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="48.26" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-12.7" y="40.64"/>
 </segment>

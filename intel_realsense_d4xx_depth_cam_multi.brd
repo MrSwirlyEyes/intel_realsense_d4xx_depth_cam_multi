@@ -165,7 +165,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTYwNDI5MzA4MDY3NTY" f3durn="urn:adsk.wipprod:dm.lineage:O28O6C-qS_GBEwGM4ZqODw" pcbguid="62f0b917-b0ba-40be-aa7b-2ff664897ed8" lastpulledtime="" lastsyncedchangeguid="8800b89f-20c9-5480-1314-b8252c44279b"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTYwNDI5MzA4MDY3NTY" f3durn="urn:adsk.wipprod:dm.lineage:O28O6C-qS_GBEwGM4ZqODw" pcbguid="62f0b917-b0ba-40be-aa7b-2ff664897ed8" lastpulledtime="" lastsyncedchangeguid="9aca7025-9b01-9632-26e4-a0b3e293ce1b"/>
 <plain>
 <wire x1="-18.7" y1="-2.1" x2="18.7" y2="-2.1" width="0" layer="20"/>
 <wire x1="18.7" y1="-2.1" x2="18.7" y2="22.8" width="0" layer="20"/>
@@ -1099,13 +1099,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="10.4" y="4.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="12.4" y="-0.3" size="0.25" layer="27" font="vector" ratio="10" align="center"/>
 </element>
-<element name="BNC1" library="PiB_connectors" package="BNC_RA_1-1337543-0" package3d_urn="urn:adsk.eagle:package:6338576/2" value="BNC 50OHM 4GHz" x="0" y="15.4" smashed="yes">
-<attribute name="DATASHEET" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337543&amp;DocType=Customer+Drawing&amp;DocLang=English" x="0" y="15.4" size="1.778" layer="27" display="off"/>
+<element name="BNC1" library="PiB_connectors" package="BNC_RA_1-1337543-0" package3d_urn="urn:adsk.eagle:package:6338576/2" value="BNC 75OHM 2GHz" x="0" y="15.4" smashed="yes">
+<attribute name="DATASHEET" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1478032&amp;DocType=Customer+Drawing&amp;DocLang=English" x="0" y="15.4" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="0" y="15.4" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=A97553-ND" x="0" y="15.4" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="A97553-ND" x="0" y="15.4" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=A97560-ND" x="0" y="15.4" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="A97560-ND" x="0" y="15.4" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="TE Connectivity AMP Connectors" x="0" y="15.4" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1-1337543-0" x="0" y="15.4" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="1-1478032-0" x="0" y="15.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SW1" library="PiB_switches" package="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" package3d_urn="urn:adsk.eagle:package:2959400/3" value="300mA/4V" x="17" y="12" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1119,7 +1119,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="TESTED" value="YES" x="17" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="18.143" y="12" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="S1" library="PiB_switches" package="BTN_MOMENTARY_SPDT-NO_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V" x="12" y="12" smashed="yes" rot="R90">
+<element name="SW2" library="PiB_switches" package="BTN_MOMENTARY_SPDT-NO_L4.6-W2.8" package3d_urn="urn:adsk.eagle:package:3034784/2" value="50mA/32V" x="12" y="12" smashed="yes" rot="R90">
 <attribute name="DATASHEET" value="https://www.ckswitches.com/media/1479/kmr2.pdf" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=401-1426-1-ND" x="12" y="12" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1243,7 +1243,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="15.25" y1="9.75" x2="14.25" y2="9.75" width="0.381" layer="1"/>
 <wire x1="14.25" y1="9.75" x2="14" y2="9.5" width="0.381" layer="1"/>
 <wire x1="14" y1="9.1" x2="14" y2="9.5" width="0.381" layer="1"/>
-<contactref element="S1" pad="3"/>
+<contactref element="SW2" pad="3"/>
 <wire x1="12.8" y1="10" x2="13.5" y2="10" width="0.381" layer="1"/>
 <wire x1="13.5" y1="10" x2="14" y2="9.5" width="0.381" layer="1"/>
 <contactref element="R1" pad="2"/>
@@ -1278,7 +1278,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$1">
 <contactref element="BNC1" pad="+"/>
 <contactref element="SW1" pad="2"/>
-<contactref element="S1" pad="2"/>
+<contactref element="SW2" pad="2"/>
 <wire x1="15.25" y1="12.75" x2="14.25" y2="12.75" width="0.381" layer="1"/>
 <wire x1="14.25" y1="12.75" x2="14" y2="13" width="0.381" layer="1"/>
 <wire x1="14" y1="14.5" x2="13.6" y2="14.9" width="0.381" layer="1"/>
